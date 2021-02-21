@@ -1,4 +1,3 @@
-// const serviceAccount = require('./pcsb-registration-firebase-adminsdk-dx8j2-1100629c7b.json');
 const serviceAccount = require('../config/donation-847ad-firebase-adminsdk-i11ss-2ffc06c32c.json');
 const admin = require('firebase-admin');
 

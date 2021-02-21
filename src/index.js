@@ -19,24 +19,10 @@ const firestoreOps = require('./config/utils');
 let UserData = {};
 require('dotenv').config();
 
-
 let instance = new Razorpay({
   key_id: "rzp_test_gBxfU8lz93zioG", // your `KEY_ID`
   key_secret: 'z1K7k9FWLgFxM7ugKI4IoAEL' // your `KEY_SECRET`
 })
-
-// "rzp_test_gBxfU8lz93zioG"
-// z1K7k9FWLgFxM7ugKI4IoAEL
-
-// var config = {
-//   apiKey: "apiKey",
-//   authDomain: "pcsb-registration-81b2e.firebaseapp.com",
-//   // For databases not in the us-central1 location, databaseURL will be of the
-//   // form https://[databaseName].[region].firebasedatabase.app.
-//   // For example, https://your-database-123.europe-west1.firebasedatabase.app
-//   databaseURL: "https://pcsb-registration-81b2e-default-rtdb.firebaseio.com/",
-//   storageBucket: "bucket.appspot.com"
-// };
 
 var config = {
   apiKey: "AIzaSyDyKNBmzmN7VrreVcmU7gSvBFkXxe1Xal4",
@@ -101,7 +87,6 @@ app.post("/pay",(req,res)=>{
 })
 });
 
-
 app.get('/checkout', (req, res)=>{
   // console.log("get req for /checkout");
   res.render('checkout');
@@ -130,7 +115,7 @@ app.get('/success', async (req, res)=>{
   pdf.create(receiptGen.htmlTemplate(data), receiptGen.options)
     .toFile('assets/'+ 'receipt.pdf', async (err, result) => {
         var mailOptions = {
-          // from: 'pictcsi21@gmail.com',
+         
           from: process.env.EMAIL_USER,
           to: data.email,
           subject: "Donation Payment Receipt",

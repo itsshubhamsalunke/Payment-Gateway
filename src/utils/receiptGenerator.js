@@ -113,7 +113,7 @@ const htmlTemplate = (data) => `<!doctype html>
     <center id="top">
       <div class="logo"></div>
       <div class="info"> 
-        <h2>Test Project</h2>
+        <h2>Shubham Salunke</h2>
       </div><!--End Info-->
     </center><!--End InvoiceTop-->
     
@@ -146,15 +146,15 @@ const htmlTemplate = (data) => `<!doctype html>
 
 							<tr class="tabletitle">
 								<td></td>
-								<td class="Rate"><h2>Total</h2></td>
-								<td class="payment"><h2>${data.amount}</h2></td>
+								<td class="Rate"><h2 style="color: green;">Total</h2></td>
+								<td class="payment"><h2 style="color: green;">${data.amount}</h2></td>
 							</tr>
 
 						</table>
 					</div><!--End Table-->
 
 					<div id="legalcopy">
-						<p class="legal"><strong>Thank you for your business!</strong>  Payment is expected within 31 days; please process this invoice within that time. There will be a 5% interest charge per month on late invoices. 
+						<p class="legal"><strong>Thank you for your great generosity !</strong> greatly appreciate your donation, your support helps to further our mission. Your support is invaluable to us, <strong>Thank You again !</strong> 
 						</p>
 					</div>
 
@@ -163,20 +163,6 @@ const htmlTemplate = (data) => `<!doctype html>
 
 </body>
 </html>`
-
-// function guidGenerator() {
-//     var S4 = function() {
-//        return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-//     };
-//     return (S4()+S4()+S4()+S4());
-// }
-
-// function generateApplicationId() {
-//     var S4 = function() {
-//        return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-//     };
-//     return (S4()+"-"+S4()+"-"+S4());
-// }
 
 module.exports = {
     options: options,
