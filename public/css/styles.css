@@ -1,0 +1,125 @@
+body {
+  /* color: rgb(23, 7, 39); */
+  /* background-color: green; */
+  /* background-image: url('/img/home.jfif') repea; */
+  background: url('/img/home.jfif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html, body {
+  margin: 0p;
+  background-color: #222;
+}
+
+.label {
+  /* color: white; */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 50px;
+  display: block;
+  font-size: 11px;
+  padding: 0 5.5em;
+  transition: all 0.3s ease;
+}
+.cta-container {
+  position: absolute;
+  top: 950%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.button form span{
+  font-size: larger;
+}
+
+.relative-box {
+  position: relative;
+  height: 100%;
+}
+.square-front {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  bottom: -5px;
+  left: -10px;
+}
+.square-back {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  bottom: -10px;
+  left: -5px;
+}
+.line {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.line-top {
+  position: absolute;
+  height: 1px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.line-right {
+  position: absolute;
+  width: 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.line-bottom {
+  position: absolute;
+  height: 1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.line-left {
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.button:hover .label {
+  background-color: green;
+  /* color: rgba(22, 22, 22, .3); */
+  color: white;
+  box-shadow: 0 0 20px white;
+}
+.button:hover .square-back .line-top, .button:hover .square-back .line-bottom {
+  left: 50%;
+  right: 50%;
+}
+.button:hover .square-back .line-left, .button:hover .square-back .line-right {
+  top: 5px;
+  bottom: 5px;
+}
+.button:hover .square-front .line-top, .button:hover .square-front .line-bottom {
+  right: 5px;
+  left: 5px;
+}
+.button:hover .square-front .line-left, .button:hover .square-front .line-right {
+  top: 50%;
+  bottom: 50%;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+}
+.row {
+	height: 100%;
+}
+.col {
+	padding: 15px;
+	text-align: center;
+}
