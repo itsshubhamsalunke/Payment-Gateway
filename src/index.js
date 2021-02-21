@@ -164,6 +164,8 @@ app.get('/success', async (req, res)=>{
     });
 })
 
-app.listen("3000",()=>{
+var port = process.env.PORT || 3000
+
+app.listen(port,()=>{
     console.log("server running at port 3000");
 })
