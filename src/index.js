@@ -119,7 +119,7 @@ app.get('/success', async (req, res)=>{
           from: process.env.EMAIL_USER,
           to: data.email,
           subject: "Donation Payment Receipt",
-          html: `<strong>Thank you for your great generosity !</strong> greatly appreciate your donation, your support helps to further our mission. Your support is invaluable to us, <strong>Thank You again !</strong> `,
+          html: `Thank you for your great generosity! We, at [charitable organization], greatly appreciate your donation, and your sacrifice. Your support helps to further our mission through [general projects], including [specific project or recipient]. Your support is invaluable to us, thank you again.`,
           attachments: [
             { 
               filename: 'receipt.pdf',
